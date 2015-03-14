@@ -1,0 +1,60 @@
+Thumbs.db
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.sln.docstates
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+*.vssscc
+$tf*/
+Library/
+Temp/
+*.sln
+*.csproj
+*.sln
+*.userprefs
+*.unityproj
+*.DS_Store
+# ---------------[ Unity generated ]------------------ # 
+/Temp 
+/obj 
+/UnityGenerated 
+/Library 
+# ----[ Visual Studio / MonoDevelop generated ]------- # 
+ExportedObj/ 
+*.svd 
+*.userprefs 
+*.csproj 
+*.pidb 
+*.suo 
+*.sln 
+*.user 
+*.unityproj 
+*.booproj 
+# -------------[ OS generated ]------------------------ # 
+.DS_Store .DS_Store? 
+._*
+ .Spotlight-V100 
+ .Trashes 
+ Icon? 
+ ehthumbs.db 
