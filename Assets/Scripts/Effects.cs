@@ -19,12 +19,16 @@ public class Effects : MonoBehaviour
 	{
 		//在脚本运行期间，添加方法到事件中心
 		Messenger<PlayEffectParameters>.AddListener(names.MethodNames.PlayEffect,PlayEffect);
+        Messenger<bool>.AddListener(names.MethodNames.SetLeftTrailEffect, SetLeftTrailEffect);
+        Messenger<bool>.AddListener(names.MethodNames.SetRightTrailEffect, SetRightTrailEffect);
 	}
 	void OnDisable()
 	{
 		//在脚本失活期间，从事件中心中取消方法
 		Messenger<PlayEffectParameters>.RemoveListener(names.MethodNames.PlayEffect,PlayEffect);
-	}
+        Messenger<bool>.RemoveListener(names.MethodNames.SetLeftTrailEffect, SetLeftTrailEffect);
+        Messenger<bool>.RemoveListener(names.MethodNames.SetRightTrailEffect, SetRightTrailEffect);
+    }
 	public void PlayEffect(PlayEffectParameters p)
 	{  
 		GameObject newEffect = null;

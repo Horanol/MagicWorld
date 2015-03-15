@@ -10,8 +10,10 @@ public class CallEffects : MonoBehaviour
         p.position = transform.FindChild("hitGroundPosition").transform.position;
         p.rotation = Quaternion.identity;
         p.lastTime = 1.5f; 
-        //调用特效方法
+        //调用特效方法 
         Messenger<PlayEffectParameters>.Broadcast(names.MethodNames.PlayEffect, p);      
     }
+
+
 
 }

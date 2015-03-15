@@ -8,25 +8,16 @@ public static class names
 	public static readonly string baseLayer_NormalAttack1 = "Base Layer.normal_doubleSwordsCut";
 	public static readonly string baseLayer_NormalAttack2 = "Base Layer.normal_rightCut";
 	public static readonly string baseLayer_Shout = "Base Layer.shout";
-
-	public static readonly string SetLeftTrailEffect = "SetLeftTrailEffect";
-	public static readonly string SetRightTrailEffect = "SetRightTrailEffect";
 	public static class MethodNames
 	{
 		public static readonly string PlayEffect = "PlayEffect";
+        public static readonly string CheckWalkState = "CheckWalkState";
+        public static readonly string CheckAttackState = "CheckAttackState";
+        public static readonly string SetLeftTrailEffect = "SetLeftTrailEffect";
+        public static readonly string SetRightTrailEffect = "SetRightTrailEffect";
 	}
 }
 
-public enum Armor
-{
-    Helmet,
-    Shirt,
-    Pants,
-    Boots,
-    Shield,
-    Ring,
-    Gloves,
-}
 public enum Quality
 {
     low,

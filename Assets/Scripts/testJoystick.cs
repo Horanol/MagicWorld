@@ -21,7 +21,7 @@ public class testJoystick : MonoBehaviour
         //停止时，角色恢复idle  
         if (move.joystickName == "MoveJoystick")
         {
-            Messenger<float, float>.Broadcast("SetDirection", 0.0f, 0.0f);
+            Messenger<float, float>.Broadcast(names.MethodNames.CheckWalkState, 0.0f, 0.0f);
         }
     }
     //移动摇杆中  
@@ -37,6 +37,6 @@ public class testJoystick : MonoBehaviour
         float joyPositionY = move.joystickAxis.y;
 
          //设置角色的朝向（摇杆偏移量）  
-         Messenger<float, float>.Broadcast("SetDirection", joyPositionX, joyPositionY);
+         Messenger<float, float>.Broadcast(names.MethodNames.CheckWalkState, joyPositionX, joyPositionY);
     }  
 }
